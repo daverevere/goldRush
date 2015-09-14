@@ -1,0 +1,15 @@
+.map {
+position: relative;
+margin: auto;
+z-index:1;
+}
+
+.marker {
+background-color: red;
+position: fixed;
+height: 10px;
+width:10px;
+z-index:2;
+border-radius: 5px;
+}
+

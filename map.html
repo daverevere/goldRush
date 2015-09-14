@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+ <head>
+ <link rel="stylesheet" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="gold.js"></script>
+  <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <title>title</title>
+ </head>
+ <body ng-controller ="mainController">
+
+ <div ng-click="map($event)" class="map"><img src="topo-co.jpg">
+ 	<div ng-class="{'marker':bug}" ng-style="{'top': clientY, 'left':clientX}">
+ 	
+ 	</div>
+ </div>
+  
+  
+ </body>
+</html>
