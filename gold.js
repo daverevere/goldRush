@@ -1,15 +1,17 @@
 var app = angular.module("myApp", [])
 
 app.controller("mainController", ["$scope", function($scope){
-$scope.bug=false
-$scope.clientY="500px"
-$scope.clientX="500px"
+$scope.marks=[{x:"", y:""}]
 $scope.map = function(event) {
-$scope.bug=true
-$scope.clientY=event.clientY.toString() + "px"
-$scope.clientX=event.clientX.toString() + "px"
+	
+	$scope.marks.push({x: event.clientX.toString() + "px", y: event.clientY.toString() + "px"})
 	console.log(event)
+
+	
 }
+$scope.remove = function(index){
+	$scope.marks.splice(index, 1)
+} 
 
 
 

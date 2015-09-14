@@ -10,12 +10,14 @@
  </head>
  <body ng-controller ="mainController">
 
- <div ng-click="map($event)" class="map"><img src="topo-co.jpg">
- 	<div ng-class="{'marker':bug}" ng-style="{'top': clientY, 'left':clientX}">
+<div ng-repeat="mark in marks"  ng-click = "remove($index)">
+ 	<div  class="marker" ng-style="{'top': mark.y, 'left':mark.x}">
  	
  	</div>
  </div>
-  
+ <div ng-click="map($event)" class="map"><img src="topo-co.jpg">
+ 
+ </div>
   
  </body>
 </html>
